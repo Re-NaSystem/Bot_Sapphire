@@ -1,6 +1,7 @@
 import { ApplyOptions } from '@sapphire/decorators';
 import { Listener, Store } from '@sapphire/framework';
 import { blue, gray, green, magenta, magentaBright, white, yellow } from 'colorette';
+import { client } from '../index';
 
 const dev = process.env.NODE_ENV !== 'production';
 
@@ -11,6 +12,13 @@ export class UserEvent extends Listener {
 	public override run() {
 		this.printBanner();
 		this.printStoreDebugInformation();
+		this.changeStatus()
+	}
+
+	private changeStatus() {
+		client.user?.setActivity({
+			name: `/help | ${client.guilds.cache.size} servers`,
+		});
 	}
 
 	private printBanner() {
