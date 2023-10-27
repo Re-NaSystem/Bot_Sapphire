@@ -1,0 +1,48 @@
+{
+  "name": "rena_bot_sapphire",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "type": "commonjs",
+  "license": "MIT",
+  "dependencies": {
+    "@discord-player/extractor": "^4.4.5",
+    "@discordjs/opus": "^0.9.0",
+    "@sapphire/decorators": "^6.0.2",
+    "@sapphire/discord.js-utilities": "7.0.2",
+    "@sapphire/framework": "^4.7.1",
+    "@sapphire/plugin-logger": "^3.0.6",
+    "@sapphire/utilities": "^3.13.0",
+    "@skyra/env-utilities": "^1.2.1",
+    "colorette": "^2.0.20",
+    "discord-player": "^6.6.6",
+    "discord.js": "^14.13.0",
+    "i18n": "^0.15.1",
+    "mongoose": "^7.6.3",
+    "youtube-ext": "^1.1.16"
+  },
+  "devDependencies": {
+    "@sapphire/cli": "^1.6.1",
+    "@sapphire/prettier-config": "^2.0.0",
+    "@sapphire/ts-config": "^5.0.0",
+    "@types/i18n": "^0.13.8",
+    "@types/node": "^20.8.7",
+    "@types/ws": "^8.5.8",
+    "eslint": "^8.52.0",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^3.0.3",
+    "tsc-watch": "^6.0.4",
+    "typescript": "^5.2.2"
+  },
+  "scripts": {
+    "sapphire": "sapphire",
+    "generate": "sapphire generate",
+    "build": "tsc -p .",
+    "watch": "tsc -w .",
+    "start": "node --trace-warnings dist/index.js",
+    "dev": "run-s build start",
+    "watch:start": "tsc-watch --onSuccess \"npm run start\"",
+    "lint:prettier": "prettier --write \"src/\"",
+    "lint": "run-s lint:*"
+  },
+  "prettier": "@sapphire/prettier-config"
+}
