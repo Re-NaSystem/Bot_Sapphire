@@ -1,82 +1,82 @@
 {
-  "error": {
-    "unexpectederror": {
-      "title": "予期せぬエラーが発生しました",
-      "description": "修正されない場合は、サポートサーバーにお問い合わせください。"
-    },
-    "missingpermissions": {
-      "title": "権限が不足しています",
-      "description": "このコマンドを実行するには{permission}の権限が必要です"
-    }
-  },
-  "command": {
-    "ping": {
-      "title": "🏓 計測しました",
-      "description": "WebSocketレイテンシ: {ping}ms"
-    },
-    "purge": {
-      "success": {
-        "title": "正常に完了しました",
-        "description": ":white_check_mark: {messages}メッセージを削除しました"
-      }
-    },
-    "verification": {
-      "button": {
-        "panel": {
-          "title": "簡易認証",
-          "description": "ボタンをクリックして認証してください。\n認証完了後、ロールが付与されます"
-        }
-      }
-    },
-    "language": {
-      "title": "言語を変更しました",
-      "description": "Botの言語を`日本語`に変更しました"
-    },
-    "track": {
-      "error": {
-        "not_played": "このサーバーでは何も再生されていません"
-      },
-      "play": {
-        "pls_join_vc": {
-          "title": "エラーが発生しました",
-          "description": "ボイスチャンネルに参加してください"
-        },
-        "pls_join_botvc": {
-          "title": "エラーが発生しました",
-          "description": "Botと同じボイスチャンネルに参加してください"
-        },
-        "join_error": {
-          "title": "エラーが発生しました",
-          "description": "ボイスチャンネルに参加できませんでした"
-        },
-        "track_not_found": {
-          "title": "エラーが発生しました",
-          "description": "トラックが見つかりませんでした"
-        },
-        "add_track": {
-          "title": "キューに追加しました",
-          "description": "{track}をキューに追加しました",
-          "playlist": "{count}個のトラックをキューに追加しました"
-        }
-      },
-      "queue": {
-        "show": "キュー内の上位の楽曲を表示しています"
-      },
-      "stop": "再生を終了しました",
-      "repeat": {
-        "set": "リピートモードを{mode}に設定しました",
-        "mode": {
-          "off": "オフ",
-          "track": "トラック",
-          "queue": "キュー",
-          "autoplay": "自動再生"
-        }
-      },
-      "event": {
-        "playing": "現在再生中: {track}"
-      },
-      "skip": "スキップしました",
-      "shufful": "シャッフルしました"
-    }
-  }
+	"error": {
+		"unexpectederror": {
+			"title": "予期せぬエラーが発生しました",
+			"description": "修正されない場合は、サポートサーバーにお問い合わせください。"
+		},
+		"missingpermissions": {
+			"title": "権限が不足しています",
+			"description": "このコマンドを実行するには{permission}の権限が必要です"
+		}
+	},
+	"command": {
+		"ping": {
+			"title": "🏓 計測しました",
+			"description": "WebSocketレイテンシ: {ping}ms"
+		},
+		"purge": {
+			"success": {
+				"title": "正常に完了しました",
+				"description": ":white_check_mark: {messages}メッセージを削除しました"
+			}
+		},
+		"verification": {
+			"button": {
+				"panel": {
+					"title": "簡易認証",
+					"description": "ボタンをクリックして認証してください。\n認証完了後、ロールが付与されます"
+				}
+			}
+		},
+		"language": {
+			"title": "言語を変更しました",
+			"description": "Botの言語を`日本語`に変更しました"
+		},
+		"track": {
+			"error": {
+				"not_played": "このサーバーでは何も再生されていません"
+			},
+			"play": {
+				"pls_join_vc": {
+					"title": "エラーが発生しました",
+					"description": "ボイスチャンネルに参加してください"
+				},
+				"pls_join_botvc": {
+					"title": "エラーが発生しました",
+					"description": "Botと同じボイスチャンネルに参加してください"
+				},
+				"join_error": {
+					"title": "エラーが発生しました",
+					"description": "ボイスチャンネルに参加できませんでした"
+				},
+				"track_not_found": {
+					"title": "エラーが発生しました",
+					"description": "トラックが見つかりませんでした"
+				},
+				"add_track": {
+					"title": "キューに追加しました",
+					"description": "{track}をキューに追加しました",
+					"playlist": "{count}個のトラックをキューに追加しました"
+				}
+			},
+			"queue": {
+				"show": "キュー内の上位の楽曲を表示しています"
+			},
+			"stop": "再生を終了しました",
+			"repeat": {
+				"set": "リピートモードを{mode}に設定しました",
+				"mode": {
+					"off": "オフ",
+					"track": "トラック",
+					"queue": "キュー",
+					"autoplay": "自動再生"
+				}
+			},
+			"event": {
+				"playing": "現在再生中: {track}"
+			},
+			"skip": "スキップしました",
+			"shufful": "シャッフルしました"
+		}
+	}
 }
