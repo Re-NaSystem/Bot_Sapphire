@@ -1,22 +1,15 @@
 import { ApplyOptions } from '@sapphire/decorators';
 import { Events, Listener } from '@sapphire/framework';
+import { client } from '../index';
 import { ActionRowBuilder, ButtonBuilder, ButtonStyle, ChannelType, Colors, EmbedBuilder, Guild } from 'discord.js';
-import { client } from '..';
 
 @ApplyOptions<Listener.Options>({
-  name: 'GuildCreate',
+  name: 'inviteLog',
   event: Events.GuildCreate
 })
 export class UserEvent extends Listener {
   public async run(guild: Guild) {
-    this.inviteLog(guild);
-    this.changeStatus();
-  }
-
-  private async changeStatus() {
-    client.user?.setActivity({
-      name: `/help | ${client.guilds.cache.size} servers`
-    });
+    this.inviteLog(guild)
   }
 
   private async inviteLog(guild: Guild) {
