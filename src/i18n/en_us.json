@@ -1,83 +1,83 @@
 {
-	"error": {
-		"unexpectederror": {
-			"title": "An unexpected error has occurred.",
-			"description": "If it is not corrected, please visit our support server."
-		},
-		"missingpermissions": {
-			"title": "Missing Permissions",
-			"manage_messages": "You must have `Manage Messages` permission to run this command.",
-			"manage_guild": "You must have `Manage Guild` permission to run this command."
-		}
-	},
-	"command": {
-		"ping": {
-			"title": "🏓 Pong!",
-			"description": "WebSocket Ratency: {ping}ms"
-		},
-		"purge": {
-			"success": {
-				"title": "Success!",
-				"description": ":white_check_mark: Deleted {messages} messages."
-			}
-		},
-		"verification": {
-			"button": {
-				"panel": {
-					"title": "Easy-Verification",
-					"description": "Click on the button to authenticate.\nRoles will be assigned upon completion of authentication."
-				}
-			}
-		},
-		"language": {
-			"title": "Language has been changed",
-			"description": "Bot language has been changed to `English`"
-		},
-		"track": {
-			"error": {
-				"not_played": "Nothing is playing on this server."
-			},
-			"play": {
-				"pls_join_vc": {
-					"title": "An error has occurred.",
-					"description": "Join the Voice Channel."
-				},
-				"pls_join_botvc": {
-					"title": "An error has occurred.",
-					"description": "Join the same voice channel as the bot."
-				},
-				"join_error": {
-					"title": "An error has occurred.",
-					"description": "Could not join voice channel."
-				},
-				"track_not_found": {
-					"title": "An error has occurred.",
-					"description": "Track not found"
-				},
-				"add_track": {
-					"title": "An error has occurred.",
-					"description": "{track} added to queue",
-					"playlist": "{count} tracks added to queue"
-				}
-			},
-			"queue": {
-				"show": "The top songs in the queue are shown."
-			},
-			"stop": "Playback has been stopped.",
-			"repeat": {
-				"set": "Repeat mode is set to {mode}.",
-				"mode": {
-					"off": "Off",
-					"track": "Track",
-					"queue": "Queue",
-					"autoplay": "Auto play"
-				}
-			},
-			"event": {
-				"playing": "Now playing: {track}"
-			},
-			"skip": "Skipped.",
-			"shufful": "Shuffuled"
-		}
-	}
+  "error": {
+    "unexpectederror": {
+      "title": "An unexpected error has occurred.",
+      "description": "If it is not corrected, please visit our support server."
+    },
+    "missingpermissions": {
+      "title": "Missing Permissions",
+      "manage_messages": "You must have `Manage Messages` permission to run this command.",
+      "manage_guild": "You must have `Manage Guild` permission to run this command."
+    }
+  },
+  "command": {
+    "ping": {
+      "title": "🏓 Pong!",
+      "description": "WebSocket Ratency: {ping}ms"
+    },
+    "purge": {
+      "success": {
+        "title": "Success!",
+        "description": ":white_check_mark: Deleted {messages} messages."
+      }
+    },
+    "verification": {
+      "button": {
+        "panel": {
+          "title": "Easy-Verification",
+          "description": "Click on the button to authenticate.\nRoles will be assigned upon completion of authentication."
+        }
+      }
+    },
+    "language": {
+      "title": "Language has been changed",
+      "description": "Bot language has been changed to `English`"
+    },
+    "track": {
+      "error": {
+        "not_played": "Nothing is playing on this server."
+      },
+      "play": {
+        "pls_join_vc": {
+          "title": "An error has occurred.",
+          "description": "Join the Voice Channel."
+        },
+        "pls_join_botvc": {
+          "title": "An error has occurred.",
+          "description": "Join the same voice channel as the bot."
+        },
+        "join_error": {
+          "title": "An error has occurred.",
+          "description": "Could not join voice channel."
+        },
+        "track_not_found": {
+          "title": "An error has occurred.",
+          "description": "Track not found"
+        },
+        "add_track": {
+          "title": "An error has occurred.",
+          "description": "{track} added to queue",
+          "playlist": "{count} tracks added to queue"
+        }
+      },
+      "queue": {
+        "show": "The top songs in the queue are shown."
+      },
+      "stop": "Playback has been stopped.",
+      "repeat": {
+        "set": "Repeat mode is set to {mode}.",
+        "mode": {
+          "off": "Off",
+          "track": "Track",
+          "queue": "Queue",
+          "autoplay": "Auto play"
+        }
+      },
+      "event": {
+        "playing": "Now playing: {track}"
+      },
+      "skip": "Skipped.",
+      "shufful": "Shuffuled"
+    }
+  }
 }
