@@ -4,7 +4,7 @@ import { ActionRowBuilder, ButtonBuilder, ButtonStyle, ChannelType, Colors, Embe
 import { client } from '..';
 
 @ApplyOptions<Listener.Options>({
-  name: 'MyListener',
+  name: 'GuildCreate',
   event: Events.GuildCreate
 })
 export class UserEvent extends Listener {

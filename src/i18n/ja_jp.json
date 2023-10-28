@@ -77,6 +77,20 @@
       },
       "skip": "スキップしました",
       "shufful": "シャッフルしました"
+    },
+    "gchat": {
+      "connect": {
+        "already_registerd": {
+          "title": "エラーが発生しました",
+          "description": "既にグローバルチャットに接続しています。\n接続を解除するには{command}を実行してください"
+        },
+        "success": {
+          "title": "Rena-Globalへの接続に成功しました",
+          "description": "Rena-Globalに接続しました\n荒らし対策Botを使用している場合は**Webhookのフィルターを無効化してください**\nスパムと誤認されWebhookが削除される可能性があります"
+        },
+        "failed": "Rena-Globalへの接続に失敗しました",
+        "connected": "{guild}がRena-Globalに参加しました"
+      }
     }
   }
 }
