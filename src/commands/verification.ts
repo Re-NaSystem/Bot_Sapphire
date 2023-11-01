@@ -68,7 +68,7 @@ export class UserCommand extends Command {
           components: [
             new ActionRowBuilder<ButtonBuilder>().addComponents(
               new ButtonBuilder()
-                .setCustomId("easy_verification-" + role?.id)
+                .setCustomId("button_verification-" + role?.id)
                 .setEmoji({
                   name: "✅",
                 })
