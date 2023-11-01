@@ -1,7 +1,7 @@
 import { ApplyOptions } from '@sapphire/decorators';
 import { Events, Listener } from '@sapphire/framework';
 import { ActionRowBuilder, ButtonBuilder, ButtonStyle, ChannelType, Colors, EmbedBuilder, Guild } from 'discord.js';
-import { client } from '..';
+import { client } from '../..';
 
 @ApplyOptions<Listener.Options>({
   name: 'setActivity',

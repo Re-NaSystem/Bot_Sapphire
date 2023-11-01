@@ -1,6 +1,6 @@
 import { ApplyOptions } from '@sapphire/decorators';
 import { Events, Listener } from '@sapphire/framework';
-import { client } from '../index';
+import { client } from '../../index';
 import { CacheType, Channel, ChannelType, Guild, GuildBasedChannel, Interaction } from 'discord.js';
 
 @ApplyOptions<Listener.Options>({

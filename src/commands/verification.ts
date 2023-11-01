@@ -1,6 +1,6 @@
 import { ApplyOptions } from '@sapphire/decorators';
 import { Command } from '@sapphire/framework';
-import { ApplicationCommandOptionType, Colors, EmbedBuilder, PermissionFlagsBits } from 'discord.js';
+import { ActionRowBuilder, ApplicationCommandOptionType, ButtonBuilder, ButtonStyle, Colors, EmbedBuilder, PermissionFlagsBits } from 'discord.js';
 import model from '../lib/models/language';
 import { client } from '../index';
 import { permissionFilter } from '../lib/functions/permissionFilter';
@@ -54,7 +54,7 @@ export class UserCommand extends Command {
 
     switch (type) {
       case 'button':
-        interaction.followUp({
+        await interaction.followUp({
           embeds: [
             new EmbedBuilder()
               .setTitle(client.i18n.__('command.verification.button.panel.title'))
@@ -64,6 +64,17 @@ export class UserCommand extends Command {
                 text: client.getUserData().footer,
                 iconURL: client.getUserData().icon
               })
+          ],
+          components: [
+            new ActionRowBuilder<ButtonBuilder>().addComponents(
+              new ButtonBuilder()
+                .setCustomId("easy_verification-" + role?.id)
+                .setEmoji({
+                  name: "✅",
+                })
+                .setLabel("クリックして認証")
+                .setStyle(ButtonStyle.Success)
+            )
           ]
         });
 

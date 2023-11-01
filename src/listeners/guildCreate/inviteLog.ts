@@ -1,6 +1,6 @@
 import { ApplyOptions } from '@sapphire/decorators';
 import { Events, Listener } from '@sapphire/framework';
-import { client } from '../index';
+import { client } from '../../index';
 import { ActionRowBuilder, ButtonBuilder, ButtonStyle, ChannelType, Colors, EmbedBuilder, Guild } from 'discord.js';
 
 @ApplyOptions<Listener.Options>({
